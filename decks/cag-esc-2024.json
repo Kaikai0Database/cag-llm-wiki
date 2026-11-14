@@ -1,0 +1,19 @@
+{
+  "slug": "cag-esc-2024",
+  "title": "冠狀動脈造影 AI 影像分析 × 2024 ESC 指引",
+  "subtitle": "從臨床指引、解剖標準、DL-QCA、DICOM 到 VLM + RAG 報告生成",
+  "tags": ["CAG", "2024 ESC CCS", "DL-QCA", "DICOM", "RAG"],
+  "sections": [
+    {"title": "CCS 的定義與範圍", "query": "慢性冠狀動脈症候群 CCS 定義 範圍 ANOCA INOCA 微血管 痙攣", "sources": ["esc2024"], "k": 1},
+    {"title": "臨床可能性與初始檢查", "query": "RF-CL 臨床可能性 分級 CACS CCTA 功能性影像 初始檢查選擇", "sources": ["esc2024"], "k": 3},
+    {"title": "ICA 與侵入性功能評估", "query": "侵入性冠狀動脈造影 ICA 適應症 40-90% 中間病灶 FFR iFR QFR IVUS OCT", "sources": ["esc2024"], "k": 3},
+    {"title": "AHA 冠狀動脈 16 分段", "query": "AHA 分段 RCA LM LAD LCx 分段編號 優勢型態", "sources": ["aha-segments"], "k": 4},
+    {"title": "狹窄分級與資料集對應", "query": "狹窄程度分級 顯著狹窄 ≥50% ≥70% SYNTAX ARCADE 分段對照", "sources": ["aha-segments"], "k": 3},
+    {"title": "QCA 原理與影像校正", "query": "QCA 原理 MLD RVD %DS 公式 校正 Imager Pixel Spacing", "sources": ["dl-qca"], "k": 2},
+    {"title": "深度學習 QCA 管線", "query": "深度學習 QCA 管線 關鍵影格 血管分割 U-Net 中心線 狹窄偵測 評估指標 限制", "sources": ["dl-qca"], "k": 4},
+    {"title": "DICOM Part 10 與 XA 標籤", "query": "DICOM Part 10 前導區 DICM 檔案中繼資訊 Transfer Syntax XA SOP Class 多影格 角度", "sources": ["dicom-p10"], "k": 3},
+    {"title": "4TB 資料管線與去識別化", "query": "4TB 資料管線 manifest stop_before_pixels 去識別化 Annex E checkpoint", "sources": ["dicom-p10"], "k": 2},
+    {"title": "VLM + RAG 報告生成", "query": "視覺語言模型 架構 RAG 步驟 嵌入 檢索 醫療報告價值", "sources": ["vlm-rag"], "k": 3},
+    {"title": "防幻覺、評估與臨床責任", "query": "幻覺 防護 引用 數字檢查 評估 BLEU 臨床正確性 本機部署 醫師審閱", "sources": ["vlm-rag"], "k": 3}
+  ]
+}

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <title>CAG AI 知識庫</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" id="brand" href="index.html">CAG AI 知識庫</a>
+      <nav class="nav" id="nav" aria-label="主選單">
+        <a href="index.html" data-page="home">首頁</a>
+        <a href="wiki.html" data-page="wiki">Wiki 知識庫</a>
+        <a href="slides.html" data-page="slides">教學簡報</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" id="main">
+    <section class="card">
+      <h1 id="site-title">CAG AI 影像分析 × 2024 ESC 知識庫</h1>
+      <p class="lead" id="site-subtitle"></p>
+      <div id="stats"></div>
+      <h3>處理管線</h3>
+      <ul class="flow">
+        <li><span class="tag">Ingest：raw → Wiki</span></li>
+        <li><span class="tag">檢索與整理</span></li>
+        <li><span class="tag accent">交叉檢查與對齊</span></li>
+        <li><span class="tag ok">HTML 簡報生成</span></li>
+      </ul>
+      <p class="small">全部在本機 Ollama 執行。每個重點都要附引用段落；數字不在原文、引用不存在、或審查模型判定不支持的內容，一律剔除。</p>
+    </section>
+
+    <h2 class="section-title">教學簡報</h2>
+    <div class="grid" id="decks"></div>
+
+    <h2 class="section-title">Wiki 來源（5 篇核心資料）</h2>
+    <div class="grid" id="sources"></div>
+  </main>
+
+  <script src="common.js"></script>
+  <script src="home.js"></script>
+</body>
+</html>
