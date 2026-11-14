@@ -7,7 +7,7 @@
   <meta name="referrer" content="no-referrer">
   <title>Wiki 知識庫</title>
   <link rel="icon" href="data:,">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=2">
 </head>
 <body data-page="wiki">
   <header class="site-header">
@@ -23,15 +23,15 @@
   </header>
 
   <main class="container" id="main">
-    <section class="card">
-      <h1 id="wiki-title">Wiki 知識庫</h1>
-      <p class="lead">以下是 Ingest 後的原文段落，也是簡報交叉檢查的唯一依據。</p>
-      <div id="source-tabs"></div>
+    <section class="hero">
+      <h1>Wiki 知識庫</h1>
+      <p class="lead">簡報的每個重點，都要對得上這裡的原文段落。</p>
+      <nav id="source-tabs" aria-label="來源"></nav>
     </section>
-    <div id="wiki-body"></div>
+    <article class="card" id="wiki-body"></article>
   </main>
 
-  <script src="common.js"></script>
-  <script src="wiki.js"></script>
+  <script src="common.js?v=2"></script>
+  <script src="wiki.js?v=2"></script>
 </body>
 </html>

@@ -7,7 +7,7 @@
   <meta name="referrer" content="no-referrer">
   <title>CAG AI 知識庫</title>
   <link rel="icon" href="data:,">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=2">
 </head>
 <body data-page="home">
   <header class="site-header">
@@ -23,28 +23,24 @@
   </header>
 
   <main class="container" id="main">
-    <section class="card">
+    <section class="hero">
       <h1 id="site-title">CAG AI 影像分析 × 2024 ESC 知識庫</h1>
       <p class="lead" id="site-subtitle"></p>
       <div id="stats"></div>
-      <h3>處理管線</h3>
-      <ul class="flow">
-        <li><span class="tag">Ingest：raw → Wiki</span></li>
-        <li><span class="tag">檢索與整理</span></li>
-        <li><span class="tag accent">交叉檢查與對齊</span></li>
-        <li><span class="tag ok">HTML 簡報生成</span></li>
-      </ul>
-      <p class="small">全部在本機 Ollama 執行。每個重點都要附引用段落；數字不在原文、引用不存在、或審查模型判定不支持的內容，一律剔除。</p>
     </section>
 
-    <h2 class="section-title">教學簡報</h2>
-    <div class="grid" id="decks"></div>
+    <section class="section" aria-labelledby="h-decks">
+      <div class="section-head"><h2 id="h-decks">教學簡報</h2></div>
+      <div id="decks"></div>
+    </section>
 
-    <h2 class="section-title">Wiki 來源（5 篇核心資料）</h2>
-    <div class="grid" id="sources"></div>
+    <section class="section" aria-labelledby="h-sources">
+      <div class="section-head"><h2 id="h-sources">Wiki 來源</h2></div>
+      <div class="card flush"><ul class="rows" id="sources"></ul></div>
+    </section>
   </main>
 
-  <script src="common.js"></script>
-  <script src="home.js"></script>
+  <script src="common.js?v=2"></script>
+  <script src="home.js?v=2"></script>
 </body>
 </html>

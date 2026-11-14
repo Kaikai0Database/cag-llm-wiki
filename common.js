@@ -40,10 +40,8 @@ const App = (() => {
     return r.json();
   }
 
-  /** 頁首結構寫在 HTML，這裡只填站名與目前頁面 */
-  function renderHeader(site) {
-    const brand = document.getElementById("brand");
-    if (brand && site && site.title) brand.textContent = site.title;
+  /** 頁首結構寫在 HTML，這裡只標示目前頁面 */
+  function renderHeader() {
     const page = document.body.dataset.page;
     for (const a of document.querySelectorAll("#nav a")) {
       if (a.dataset.page === page) a.setAttribute("aria-current", "page");
@@ -55,7 +53,6 @@ const App = (() => {
       h("div", { cls: "card status" }, [
         h("h2", { text: "資料載入失敗" }),
         h("p", { text: String(err && err.message ? err.message : err) }),
-        h("p", { cls: "small", text: "請用本機伺服器開啟：python -m http.server 8000 --directory docs" }),
       ])
     );
   }

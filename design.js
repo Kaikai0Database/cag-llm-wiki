@@ -4,51 +4,35 @@
   const { h, tag, tagList } = App;
   const main = document.getElementById("main");
 
-  function qaCard(item) {
-    return h("article", { cls: "card" }, [
-      h("h3", { text: item.q }),
-      h("ul", {}, item.a.map((t) => h("li", { text: t }))),
-    ]);
-  }
+  const qaBlock = (item) => h("section", {}, [
+    h("h3", { text: item.q }),
+    h("ul", {}, item.a.map((t) => h("li", { text: t }))),
+  ]);
 
   try {
-    const [site, d] = await Promise.all([App.loadJSON("data.json"), App.loadJSON("data/design.json")]);
-    App.renderHeader(site.site);
+    const d = await App.loadJSON("data/design.json");
+    App.renderHeader();
     document.getElementById("design-title").textContent = d.title;
-    document.getElementById("design-lead").textContent = d.lead;
 
     const flowTags = document.getElementById("flow-tags");
     for (const f of d.flow) flowTags.append(h("li", {}, [tag(f.step, f.repeat ? "accent" : "")]));
 
-    const flow = document.getElementById("flow");
-    for (const f of d.flow) {
-      flow.append(h("article", { cls: "card" }, [
-        h("h3", { text: f.step }),
-        tagList([tag(f.node), f.repeat ? tag("會重複", "accent") : tag("執行一次")]),
-        h("p", { text: f.does }),
-        h("p", { cls: "small", text: `檢查：${f.check}` }),
-      ]));
-    }
+    document.getElementById("flow").append(...d.flow.map((f) =>
+      h("li", { cls: f.repeat ? "loop" : "" }, [
+        h("div", { cls: "head" }, [h("h3", { text: f.step }), tag(f.node, "mono")]),
+        h("p", { cls: "desc", text: `${f.does}　檢查：${f.check}` }),
+      ])));
 
-    const qa = document.getElementById("qa");
-    for (const item of d.qa) qa.append(qaCard(item));
+    document.getElementById("qa").append(...d.qa.map(qaBlock));
 
-    const runs = document.getElementById("runs");
-    for (const r of d.runs) {
-      runs.append(h("article", { cls: "card" }, [
-        h("h3", { text: r.name }),
-        tagList([
-          tag(`保留 ${r.kept}`, "ok"),
-          tag(`剔除 ${r.dropped}`, "warn"),
-          tag(`迭代 ${r.iterations}`),
-          tag(`空章節：${r.empty}`, r.empty === "無" ? "" : "warn"),
-        ]),
-        h("p", { text: r.finding }),
-      ]));
-    }
+    document.getElementById("runs").append(...d.runs.map((r) =>
+      h("li", { cls: "row" }, [
+        h("span", { cls: "title", text: r.name }),
+        tagList([tag(`保留 ${r.kept}`, "ok"), tag(`剔除 ${r.dropped}`, "warn"), tag(`${r.iterations} 輪`)]),
+        h("p", { cls: "sub", text: r.finding }),
+      ])));
 
-    const refl = document.getElementById("reflection");
-    for (const item of d.reflection) refl.append(qaCard(item));
+    document.getElementById("reflection").append(...d.reflection.map(qaBlock));
   } catch (err) {
     App.showError(main, err);
   }

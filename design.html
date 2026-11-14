@@ -7,7 +7,7 @@
   <meta name="referrer" content="no-referrer">
   <title>流程設計與反思</title>
   <link rel="icon" href="data:,">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=2">
 </head>
 <body data-page="design">
   <header class="site-header">
@@ -23,26 +23,33 @@
   </header>
 
   <main class="container" id="main">
-    <section class="card">
+    <section class="hero">
       <h1 id="design-title">Loop / Graph 設計與反思</h1>
-      <p class="lead" id="design-lead"></p>
-      <ul class="flow" id="flow-tags"></ul>
+      <ul class="flow" id="flow-tags" aria-label="流程"></ul>
     </section>
 
-    <h2 class="section-title">每個節點做什麼、檢查什麼</h2>
-    <div class="grid" id="flow"></div>
+    <section class="section" aria-labelledby="h-flow">
+      <div class="section-head"><h2 id="h-flow">節點</h2><span class="meta">紅色編號＝會重複</span></div>
+      <div class="card flush"><ol class="steps" id="flow"></ol></div>
+    </section>
 
-    <h2 class="section-title">設計說明</h2>
-    <div class="grid" id="qa"></div>
+    <section class="section" aria-labelledby="h-qa">
+      <div class="section-head"><h2 id="h-qa">設計說明</h2></div>
+      <div class="card"><div class="cols" id="qa"></div></div>
+    </section>
 
-    <h2 class="section-title">實際執行紀錄</h2>
-    <div class="grid" id="runs"></div>
+    <section class="section" aria-labelledby="h-runs">
+      <div class="section-head"><h2 id="h-runs">實際執行</h2></div>
+      <div class="card flush"><ul class="rows" id="runs"></ul></div>
+    </section>
 
-    <h2 class="section-title">反思</h2>
-    <div class="grid" id="reflection"></div>
+    <section class="section" aria-labelledby="h-refl">
+      <div class="section-head"><h2 id="h-refl">反思</h2></div>
+      <div class="card"><div class="cols" id="reflection"></div></div>
+    </section>
   </main>
 
-  <script src="common.js"></script>
-  <script src="design.js"></script>
+  <script src="common.js?v=2"></script>
+  <script src="design.js?v=2"></script>
 </body>
 </html>
