@@ -1,0 +1,120 @@
+{
+  "site": {
+    "title": "CAG AI 影像分析 × 2024 ESC 知識庫",
+    "subtitle": "本機 LLM Wiki 與教學簡報（Ollama，零雲端）"
+  },
+  "decks": [
+    {
+      "slug": "cag-esc-2024",
+      "title": "冠狀動脈造影 AI 影像分析 × 2024 ESC 指引",
+      "subtitle": "從臨床指引、解剖標準、DL-QCA、DICOM 到 VLM + RAG 報告生成",
+      "tags": [
+        "CAG",
+        "2024 ESC CCS",
+        "DL-QCA",
+        "DICOM",
+        "RAG"
+      ],
+      "slide_count": 13,
+      "generated_at": "2026-11-15T01:34:15",
+      "model": "qwen3:8b",
+      "verification": {
+        "kept": 51,
+        "dropped": 1,
+        "iterations": 1,
+        "empty_sections": []
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "esc2024",
+      "title": "2024 ESC Guidelines for the management of chronic coronary syndromes",
+      "citation": "Vrints C, Andreotti F, Koskinas KC, et al. 2024 ESC Guidelines for the management of chronic coronary syndromes. Eur Heart J. 2024;45(36):3415-3537. doi:10.1093/eurheartj/ehae177",
+      "note": "本檔為專案整理稿（非指引原文全文），供本機 pipeline 建庫測試。臨床使用前請以原文核對推薦等級與數值。",
+      "chunk_count": 8,
+      "summary": "2024 ESC 指南將慢性冠狀動脈症候群定義為冠狀動脈結構及/或功能異常所導致的臨床表現，並提出風險加權臨床可能性模型（RF-CL）以評估阻塞性 CAD 的機率。該指南強調根據臨床可能性選擇適當的初始診斷檢查，如 CCTA 或功能性影像檢查。",
+      "key_terms": [
+        "chronic coronary syndromes",
+        "risk factor-weighted clinical likelihood",
+        "invasive coronary angiography"
+      ],
+      "wiki_page": "wiki/sources/esc2024.md"
+    },
+    {
+      "id": "aha-segments",
+      "title": "AHA 16-Segment Coronary Tree Classification and Anatomical Standard",
+      "citation": "Austen WG, et al. A reporting system on patients evaluated for coronary artery disease. Circulation. 1975;51(4 Suppl):5-40. ; Raff GL, et al. SCCT guidelines for the interpretation and reporting of coronary computed tomographic angiography. J Cardiovasc Comput Tomogr. 2009;3(2):122-136.",
+      "note": "本檔為專案整理稿（非原文全文），分段編號採 SCCT 2009 修訂之 16 分段版本。使用前請以原文核對。",
+      "chunk_count": 7,
+      "summary": "AHA 16 分段系統用於統一描述冠狀動脈病灶位置，使不同機構間可進行比較，AI 模型需依此標準進行分段標註。該系統包含 16 個分段，並根據冠狀動脈優勢型態影響部分段落的存在。",
+      "key_terms": [
+        "右冠狀動脈（RCA）",
+        "左主幹與左前降支（LM / LAD）",
+        "左迴旋支（LCx）",
+        "優勢型態",
+        "狹窄程度分級",
+        "SYNTAX Score",
+        "分段對照表"
+      ],
+      "wiki_page": "wiki/sources/aha-segments.md"
+    },
+    {
+      "id": "dl-qca",
+      "title": "Deep Learning-based Quantitative Coronary Angiography (QCA) for Stenosis Detection",
+      "citation": "綜合整理稿。參考：Popov M, et al. Dataset for automatic region-based coronary artery disease diagnostics using X-ray angiography images. Sci Data. 2024;11:20.（ARCADE 資料集，請核對）",
+      "note": "本檔為專案整理稿（方法學綜述，非單一論文原文）。數值與方法請以引用文獻核對。",
+      "chunk_count": 6,
+      "summary": "深度學習 QCA 管線包含五步，包括關鍵影格選擇、血管分割、分段標註、中心線萃取與狹窄偵測。評估指標包括 Dice 係數、IoU、敏感度、精確度與 F1，並與核心實驗室 QCA 進行比較。",
+      "key_terms": [
+        "定量冠狀動脈造影",
+        "最小管腔直徑",
+        "參考血管直徑",
+        "深度學習 QCA 管線",
+        "物件偵測法",
+        "幾何量測法",
+        "Dice 係數",
+        "Bland-Altman 分析"
+      ],
+      "wiki_page": "wiki/sources/dl-qca.md"
+    },
+    {
+      "id": "dicom-p10",
+      "title": "DICOM Standard Part 10 - Media Storage and File Format (4TB Dataset Pipeline)",
+      "citation": "NEMA. DICOM PS3.10 Media Storage and File Format for Media Interchange. ; DICOM PS3.15 Annex E Attribute Confidentiality Profiles. ; DICOM PS3.3 X-Ray Angiographic Image IOD.",
+      "note": "本檔為專案整理稿（非標準原文），4TB 資料管線一節為專案工程備註。標籤編號請以 DICOM 標準最新版核對。",
+      "chunk_count": 5,
+      "summary": "DICOM Part 10 定義醫學影像的儲存格式，包含前導區、前綴、檔案中繼資訊與資料集。處理 4TB 血管造影資料時，需建立檔案清單、篩選 XA 影像並進行去識別化。",
+      "key_terms": [
+        "DICOM PS3.10",
+        "File Meta Information",
+        "Media Storage SOP Class UID",
+        "Transfer Syntax UID",
+        "Number of Frames",
+        "Positioner Primary Angle",
+        "去識別化",
+        "pydicom"
+      ],
+      "wiki_page": "wiki/sources/dicom-p10.md"
+    },
+    {
+      "id": "vlm-rag",
+      "title": "Vision-Language Models (VLMs) and RAG Integration for Medical Report Generation",
+      "citation": "綜合整理稿。參考：Lewis P, et al. Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks. NeurIPS 2020.",
+      "note": "本檔為專案整理稿（方法學綜述，非單一論文原文）。",
+      "chunk_count": 6,
+      "summary": "視覺語言模型（VLM）與檢索增強生成（RAG）結合，可提升醫療報告生成的準確性與臨床正確性。RAG 能引用最新指引原文，並透過本機部署保障病人資料安全。",
+      "key_terms": [
+        "視覺語言模型",
+        "檢索增強生成",
+        "大型語言模型",
+        "嵌入模型",
+        "幻覺",
+        "JSON schema",
+        "臨床正確性"
+      ],
+      "wiki_page": "wiki/sources/vlm-rag.md"
+    }
+  ],
+  "wiki_updated_at": "2026-11-15T01:28:48"
+}

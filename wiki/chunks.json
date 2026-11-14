@@ -1,0 +1,258 @@
+[
+  {
+    "id": "esc2024#1",
+    "source_id": "esc2024",
+    "source_title": "2024 ESC Guidelines for the management of chronic coronary syndromes",
+    "citation": "Vrints C, Andreotti F, Koskinas KC, et al. 2024 ESC Guidelines for the management of chronic coronary syndromes. Eur Heart J. 2024;45(36):3415-3537. doi:10.1093/eurheartj/ehae177",
+    "heading": "定義與範圍",
+    "text": "2024 ESC 指引將慢性冠狀動脈症候群（chronic coronary syndromes, CCS）定義為冠狀動脈結構及/或功能異常所造成的一系列臨床表現。範圍除了心外膜冠狀動脈的阻塞性疾病（obstructive CAD）之外，也包含 ANOCA/INOCA（無阻塞性冠狀動脈的心絞痛或缺血）、冠狀動脈微血管功能障礙（coronary microvascular dysfunction）與血管痙攣（vasospasm）。"
+  },
+  {
+    "id": "esc2024#2",
+    "source_id": "esc2024",
+    "source_title": "2024 ESC Guidelines for the management of chronic coronary syndromes",
+    "citation": "Vrints C, Andreotti F, Koskinas KC, et al. 2024 ESC Guidelines for the management of chronic coronary syndromes. Eur Heart J. 2024;45(36):3415-3537. doi:10.1093/eurheartj/ehae177",
+    "heading": "臨床可能性評估",
+    "text": "2024 版以 risk factor-weighted clinical likelihood（RF-CL）模型估計阻塞性 CAD 的機率，輸入包含年齡、性別、症狀型態，以及危險因子數目（早發 CAD 家族史、吸菸、血脂異常、高血壓、糖尿病）。若已有冠狀動脈鈣化分數（CACS），可再調整為 CACS-CL。可能性分為五級：極低（≤5%）、低（>5–15%）、中（>15–50%）、高（>50–85%）、極高（>85%）。"
+  },
+  {
+    "id": "esc2024#3",
+    "source_id": "esc2024",
+    "source_title": "2024 ESC Guidelines for the management of chronic coronary syndromes",
+    "citation": "Vrints C, Andreotti F, Koskinas KC, et al. 2024 ESC Guidelines for the management of chronic coronary syndromes. Eur Heart J. 2024;45(36):3415-3537. doi:10.1093/eurheartj/ehae177",
+    "heading": "初始診斷檢查的選擇",
+    "text": "極低可能性者多數可延後進一步檢查。低至中度可能性者，建議優先以冠狀動脈電腦斷層血管攝影（CCTA）排除阻塞性 CAD。中高至高度可能性者，建議優先選擇功能性影像檢查（壓力心臟超音波、SPECT、PET 或心臟磁振造影）。極高可能性或臨床高事件風險者，可直接進行侵入性冠狀動脈造影（ICA）。"
+  },
+  {
+    "id": "esc2024#4",
+    "source_id": "esc2024",
+    "source_title": "2024 ESC Guidelines for the management of chronic coronary syndromes",
+    "citation": "Vrints C, Andreotti F, Koskinas KC, et al. 2024 ESC Guidelines for the management of chronic coronary syndromes. Eur Heart J. 2024;45(36):3415-3537. doi:10.1093/eurheartj/ehae177",
+    "heading": "侵入性冠狀動脈造影與功能評估",
+    "text": "侵入性冠狀動脈造影（invasive coronary angiography, ICA）適用於高度臨床可能性、藥物治療後仍有症狀，或非侵入性檢查顯示高事件風險的病人。對於直徑狹窄 40–90% 的中間程度病灶，在決定血運重建之前，若沒有其他缺血證據，建議以壓力導線進行侵入性功能評估，例如血流儲備分數（FFR）或瞬時無波形比值（iFR）。以血管造影影像推導的 FFR（angiography-derived FFR，例如 QFR）可作為不需壓力導線的評估選項，推薦等級請以原文為準。"
+  },
+  {
+    "id": "esc2024#5",
+    "source_id": "esc2024",
+    "source_title": "2024 ESC Guidelines for the management of chronic coronary syndromes",
+    "citation": "Vrints C, Andreotti F, Koskinas KC, et al. 2024 ESC Guidelines for the management of chronic coronary syndromes. Eur Heart J. 2024;45(36):3415-3537. doi:10.1093/eurheartj/ehae177",
+    "heading": "冠狀動脈內影像",
+    "text": "對於解剖構造複雜的病灶進行經皮冠狀動脈介入治療（PCI）時，例如左主幹（left main）、真性分叉病灶或長病灶，建議以血管內超音波（IVUS）或光學同調斷層掃描（OCT）引導。"
+  },
+  {
+    "id": "esc2024#6",
+    "source_id": "esc2024",
+    "source_title": "2024 ESC Guidelines for the management of chronic coronary syndromes",
+    "citation": "Vrints C, Andreotti F, Koskinas KC, et al. 2024 ESC Guidelines for the management of chronic coronary syndromes. Eur Heart J. 2024;45(36):3415-3537. doi:10.1093/eurheartj/ehae177",
+    "heading": "血運重建策略",
+    "text": "血運重建的目標是改善症狀，並在特定解剖型態下改善預後。左主幹病變、多支血管病變或合併糖尿病者，建議由心臟團隊（Heart Team）共同決策，考量解剖複雜度（例如 SYNTAX score）、手術風險與病人偏好，以選擇 PCI 或冠狀動脈繞道手術（CABG）。"
+  },
+  {
+    "id": "esc2024#7",
+    "source_id": "esc2024",
+    "source_title": "2024 ESC Guidelines for the management of chronic coronary syndromes",
+    "citation": "Vrints C, Andreotti F, Koskinas KC, et al. 2024 ESC Guidelines for the management of chronic coronary syndromes. Eur Heart J. 2024;45(36):3415-3537. doi:10.1093/eurheartj/ehae177",
+    "heading": "藥物治療與預防",
+    "text": "抗心絞痛藥物以 beta 阻斷劑或鈣離子通道阻斷劑為第一線，並依心跳、血壓與共病調整。曾有心肌梗塞或血運重建者，建議每日阿斯匹靈 75–100 mg。降血脂目標為 LDL-C <1.4 mmol/L（<55 mg/dL）且自基線下降 ≥50%。可考慮低劑量秋水仙素（colchicine）0.5 mg 每日一次以降低心血管事件。合併第二型糖尿病者，建議使用具心血管效益的 SGLT2 抑制劑或 GLP-1 受體促效劑。"
+  },
+  {
+    "id": "esc2024#8",
+    "source_id": "esc2024",
+    "source_title": "2024 ESC Guidelines for the management of chronic coronary syndromes",
+    "citation": "Vrints C, Andreotti F, Koskinas KC, et al. 2024 ESC Guidelines for the management of chronic coronary syndromes. Eur Heart J. 2024;45(36):3415-3537. doi:10.1093/eurheartj/ehae177",
+    "heading": "專案應用備註（非指引原文）",
+    "text": "本專案的 CAG AI 影像分析定位為 ICA 判讀的輔助：自動標示冠狀動脈分段、估計直徑狹窄百分比，並標出落在 40–90% 區間、依指引應考慮功能評估的病灶。AI 輸出不取代醫師判讀與 FFR/iFR 等功能性檢查。"
+  },
+  {
+    "id": "aha-segments#1",
+    "source_id": "aha-segments",
+    "source_title": "AHA 16-Segment Coronary Tree Classification and Anatomical Standard",
+    "citation": "Austen WG, et al. A reporting system on patients evaluated for coronary artery disease. Circulation. 1975;51(4 Suppl):5-40. ; Raff GL, et al. SCCT guidelines for the interpretation and reporting of coronary computed tomographic angiography. J Cardiovasc Comput Tomogr. 2009;3(2):122-136.",
+    "heading": "分段系統的目的",
+    "text": "美國心臟協會（AHA）於 1975 年提出冠狀動脈分段報告系統，用統一的編號描述病灶位置，讓不同醫師、不同醫院與研究之間可以比較。後續 SCCT 2009 冠狀動脈電腦斷層判讀指引採用修訂的 16 分段版本。AI 模型的分段標註也需要固定的命名標準，才能與臨床報告對齊。"
+  },
+  {
+    "id": "aha-segments#2",
+    "source_id": "aha-segments",
+    "source_title": "AHA 16-Segment Coronary Tree Classification and Anatomical Standard",
+    "citation": "Austen WG, et al. A reporting system on patients evaluated for coronary artery disease. Circulation. 1975;51(4 Suppl):5-40. ; Raff GL, et al. SCCT guidelines for the interpretation and reporting of coronary computed tomographic angiography. J Cardiovasc Comput Tomogr. 2009;3(2):122-136.",
+    "heading": "右冠狀動脈（RCA）分段",
+    "text": "第 1 段：RCA 近端（proximal RCA）。第 2 段：RCA 中段（mid RCA）。第 3 段：RCA 遠端（distal RCA）。第 4 段：右側後降支（R-PDA）。第 16 段：右側後側支（R-PLB）。"
+  },
+  {
+    "id": "aha-segments#3",
+    "source_id": "aha-segments",
+    "source_title": "AHA 16-Segment Coronary Tree Classification and Anatomical Standard",
+    "citation": "Austen WG, et al. A reporting system on patients evaluated for coronary artery disease. Circulation. 1975;51(4 Suppl):5-40. ; Raff GL, et al. SCCT guidelines for the interpretation and reporting of coronary computed tomographic angiography. J Cardiovasc Comput Tomogr. 2009;3(2):122-136.",
+    "heading": "左主幹與左前降支（LM / LAD）分段",
+    "text": "第 5 段：左主幹（left main, LM）。第 6 段：LAD 近端。第 7 段：LAD 中段。第 8 段：LAD 遠端。第 9 段：第一對角支（D1）。第 10 段：第二對角支（D2）。"
+  },
+  {
+    "id": "aha-segments#4",
+    "source_id": "aha-segments",
+    "source_title": "AHA 16-Segment Coronary Tree Classification and Anatomical Standard",
+    "citation": "Austen WG, et al. A reporting system on patients evaluated for coronary artery disease. Circulation. 1975;51(4 Suppl):5-40. ; Raff GL, et al. SCCT guidelines for the interpretation and reporting of coronary computed tomographic angiography. J Cardiovasc Comput Tomogr. 2009;3(2):122-136.",
+    "heading": "左迴旋支（LCx）分段",
+    "text": "第 11 段：LCx 近端。第 12 段：第一鈍緣支（OM1）。第 13 段：LCx 中遠端。第 14 段：第二鈍緣支（OM2）。第 15 段：左側後降支（L-PDA）。"
+  },
+  {
+    "id": "aha-segments#5",
+    "source_id": "aha-segments",
+    "source_title": "AHA 16-Segment Coronary Tree Classification and Anatomical Standard",
+    "citation": "Austen WG, et al. A reporting system on patients evaluated for coronary artery disease. Circulation. 1975;51(4 Suppl):5-40. ; Raff GL, et al. SCCT guidelines for the interpretation and reporting of coronary computed tomographic angiography. J Cardiovasc Comput Tomogr. 2009;3(2):122-136.",
+    "heading": "優勢型態",
+    "text": "冠狀動脈優勢（dominance）由供應後降支（PDA）的血管決定：由 RCA 供應為右優勢，由 LCx 供應為左優勢，兩者共同供應為共同優勢（co-dominant）。優勢型態會影響第 4、15、16 段是否存在，AI 分段模型需要能處理這些變異。"
+  },
+  {
+    "id": "aha-segments#6",
+    "source_id": "aha-segments",
+    "source_title": "AHA 16-Segment Coronary Tree Classification and Anatomical Standard",
+    "citation": "Austen WG, et al. A reporting system on patients evaluated for coronary artery disease. Circulation. 1975;51(4 Suppl):5-40. ; Raff GL, et al. SCCT guidelines for the interpretation and reporting of coronary computed tomographic angiography. J Cardiovasc Comput Tomogr. 2009;3(2):122-136.",
+    "heading": "狹窄程度分級",
+    "text": "AHA 1975 報告系統以管腔直徑縮減百分比描述狹窄，分級為 0、25%、50%、75%、90%、99%（次全阻塞）與 100%（完全阻塞）。臨床慣例上，左主幹直徑狹窄 ≥50%、其他心外膜血管 ≥70% 視為顯著狹窄。"
+  },
+  {
+    "id": "aha-segments#7",
+    "source_id": "aha-segments",
+    "source_title": "AHA 16-Segment Coronary Tree Classification and Anatomical Standard",
+    "citation": "Austen WG, et al. A reporting system on patients evaluated for coronary artery disease. Circulation. 1975;51(4 Suppl):5-40. ; Raff GL, et al. SCCT guidelines for the interpretation and reporting of coronary computed tomographic angiography. J Cardiovasc Comput Tomogr. 2009;3(2):122-136.",
+    "heading": "與 AI 標註資料集的對應",
+    "text": "部分公開血管造影 AI 資料集（例如 ARCADE）採用 SYNTAX Score 的分段定義，分段數目與 AHA 16 分段不同。建置模型時需要建立分段對照表，把模型輸出轉換成臨床報告使用的編號。"
+  },
+  {
+    "id": "dl-qca#1",
+    "source_id": "dl-qca",
+    "source_title": "Deep Learning-based Quantitative Coronary Angiography (QCA) for Stenosis Detection",
+    "citation": "綜合整理稿。參考：Popov M, et al. Dataset for automatic region-based coronary artery disease diagnostics using X-ray angiography images. Sci Data. 2024;11:20.（ARCADE 資料集，請核對）",
+    "heading": "傳統 QCA 的原理",
+    "text": "定量冠狀動脈造影（quantitative coronary angiography, QCA）以影像邊緣偵測找出血管內腔輪廓，計算最小管腔直徑（minimal lumen diameter, MLD）、參考血管直徑（reference vessel diameter, RVD）與病灶長度。直徑狹窄百分比的公式為 %DS = (1 − MLD / RVD) × 100。傳統 QCA 需要人工挑選影格、放置起訖點與校正，耗時且有操作者間差異。"
+  },
+  {
+    "id": "dl-qca#2",
+    "source_id": "dl-qca",
+    "source_title": "Deep Learning-based Quantitative Coronary Angiography (QCA) for Stenosis Detection",
+    "citation": "綜合整理稿。參考：Popov M, et al. Dataset for automatic region-based coronary artery disease diagnostics using X-ray angiography images. Sci Data. 2024;11:20.（ARCADE 資料集，請核對）",
+    "heading": "影像校正",
+    "text": "QCA 需要把像素換算成毫米。常見做法是以已知直徑的導管作為校正物，或使用 DICOM 標頭中的 Imager Pixel Spacing（0018,1164）配合幾何放大率估算。校正誤差會直接影響 MLD 與 RVD 的絕對值，但對 %DS 的影響較小，因為 %DS 是比值。"
+  },
+  {
+    "id": "dl-qca#3",
+    "source_id": "dl-qca",
+    "source_title": "Deep Learning-based Quantitative Coronary Angiography (QCA) for Stenosis Detection",
+    "citation": "綜合整理稿。參考：Popov M, et al. Dataset for automatic region-based coronary artery disease diagnostics using X-ray angiography images. Sci Data. 2024;11:20.（ARCADE 資料集，請核對）",
+    "heading": "深度學習 QCA 管線",
+    "text": "典型的深度學習 QCA 管線分為五步：（1）關鍵影格選擇，挑出顯影最好、通常接近舒張末期的影格；（2）血管分割，常用 U-Net 或 nnU-Net 類模型輸出血管遮罩；（3）分段標註，把血管遮罩分配到解剖分段；（4）中心線萃取與沿中心線的直徑剖面計算；（5）狹窄偵測與 %DS 估計。"
+  },
+  {
+    "id": "dl-qca#4",
+    "source_id": "dl-qca",
+    "source_title": "Deep Learning-based Quantitative Coronary Angiography (QCA) for Stenosis Detection",
+    "citation": "綜合整理稿。參考：Popov M, et al. Dataset for automatic region-based coronary artery disease diagnostics using X-ray angiography images. Sci Data. 2024;11:20.（ARCADE 資料集，請核對）",
+    "heading": "狹窄偵測的兩種做法",
+    "text": "第一種是物件偵測法，直接以偵測框（bounding box）標出狹窄位置，例如 YOLO 或 Faster R-CNN 類模型。第二種是幾何量測法，從分割結果計算直徑剖面，再依 %DS 門檻判斷狹窄。幾何量測法可解釋性較高，能輸出與傳統 QCA 相同的 MLD、RVD 數值。"
+  },
+  {
+    "id": "dl-qca#5",
+    "source_id": "dl-qca",
+    "source_title": "Deep Learning-based Quantitative Coronary Angiography (QCA) for Stenosis Detection",
+    "citation": "綜合整理稿。參考：Popov M, et al. Dataset for automatic region-based coronary artery disease diagnostics using X-ray angiography images. Sci Data. 2024;11:20.（ARCADE 資料集，請核對）",
+    "heading": "評估指標",
+    "text": "血管分割常用 Dice 係數與 IoU 評估。狹窄偵測常用敏感度、精確度與 F1。%DS 量測則與核心實驗室（core lab）QCA 比較，使用平均絕對誤差與 Bland-Altman 分析描述一致性。"
+  },
+  {
+    "id": "dl-qca#6",
+    "source_id": "dl-qca",
+    "source_title": "Deep Learning-based Quantitative Coronary Angiography (QCA) for Stenosis Detection",
+    "citation": "綜合整理稿。參考：Popov M, et al. Dataset for automatic region-based coronary artery disease diagnostics using X-ray angiography images. Sci Data. 2024;11:20.（ARCADE 資料集，請核對）",
+    "heading": "限制",
+    "text": "血管造影是三維血管的二維投影，會有縮短效應（foreshortening）與血管重疊，單一角度可能低估或高估狹窄。建議整合多個投影角度的結果。模型在不同醫院、不同機型之間的泛化能力需要外部驗證。"
+  },
+  {
+    "id": "dicom-p10#1",
+    "source_id": "dicom-p10",
+    "source_title": "DICOM Standard Part 10 - Media Storage and File Format (4TB Dataset Pipeline)",
+    "citation": "NEMA. DICOM PS3.10 Media Storage and File Format for Media Interchange. ; DICOM PS3.15 Annex E Attribute Confidentiality Profiles. ; DICOM PS3.3 X-Ray Angiographic Image IOD.",
+    "heading": "DICOM Part 10 檔案結構",
+    "text": "DICOM PS3.10 定義醫學影像在儲存媒體上的檔案格式。一個 Part 10 檔案依序包含：128 位元組的前導區（preamble）、4 個字元的前綴 \"DICM\"、檔案中繼資訊（File Meta Information，群組 0002），接著才是資料集（data set）本體。"
+  },
+  {
+    "id": "dicom-p10#2",
+    "source_id": "dicom-p10",
+    "source_title": "DICOM Standard Part 10 - Media Storage and File Format (4TB Dataset Pipeline)",
+    "citation": "NEMA. DICOM PS3.10 Media Storage and File Format for Media Interchange. ; DICOM PS3.15 Annex E Attribute Confidentiality Profiles. ; DICOM PS3.3 X-Ray Angiographic Image IOD.",
+    "heading": "檔案中繼資訊",
+    "text": "檔案中繼資訊（群組 0002）固定以 Explicit VR Little Endian 編碼。重要欄位包括 Media Storage SOP Class UID（0002,0002）、Media Storage SOP Instance UID（0002,0003）與 Transfer Syntax UID（0002,0010）。Transfer Syntax 決定資料集與像素資料的編碼方式，例如 JPEG Lossless 的 UID 為 1.2.840.10008.1.2.4.70。"
+  },
+  {
+    "id": "dicom-p10#3",
+    "source_id": "dicom-p10",
+    "source_title": "DICOM Standard Part 10 - Media Storage and File Format (4TB Dataset Pipeline)",
+    "citation": "NEMA. DICOM PS3.10 Media Storage and File Format for Media Interchange. ; DICOM PS3.15 Annex E Attribute Confidentiality Profiles. ; DICOM PS3.3 X-Ray Angiographic Image IOD.",
+    "heading": "血管造影影像的關鍵標籤",
+    "text": "X 光血管造影影像（XA）的 SOP Class UID 為 1.2.840.10008.5.1.4.1.1.12.1。造影通常是多影格（multi-frame）電影序列，相關欄位包括 Number of Frames（0028,0008）、Frame Time（0018,1063）與 Cine Rate（0018,0040）。C 臂角度記錄在 Positioner Primary Angle（0018,1510，LAO/RAO）與 Positioner Secondary Angle（0018,1511，頭位/足位），可用於自動判斷投影角度。"
+  },
+  {
+    "id": "dicom-p10#4",
+    "source_id": "dicom-p10",
+    "source_title": "DICOM Standard Part 10 - Media Storage and File Format (4TB Dataset Pipeline)",
+    "citation": "NEMA. DICOM PS3.10 Media Storage and File Format for Media Interchange. ; DICOM PS3.15 Annex E Attribute Confidentiality Profiles. ; DICOM PS3.3 X-Ray Angiographic Image IOD.",
+    "heading": "去識別化",
+    "text": "資料離開醫院安全環境前，必須依 DICOM PS3.15 Annex E 的 Basic Application Level Confidentiality Profile 移除或替換可識別個人的欄位，例如病人姓名、病歷號、出生日期與機構名稱。也要檢查像素中是否燒錄（burned-in）文字，以及私有標籤（private tags）是否藏有個資。"
+  },
+  {
+    "id": "dicom-p10#5",
+    "source_id": "dicom-p10",
+    "source_title": "DICOM Standard Part 10 - Media Storage and File Format (4TB Dataset Pipeline)",
+    "citation": "NEMA. DICOM PS3.10 Media Storage and File Format for Media Interchange. ; DICOM PS3.15 Annex E Attribute Confidentiality Profiles. ; DICOM PS3.3 X-Ray Angiographic Image IOD.",
+    "heading": "4TB 資料管線（專案工程備註）",
+    "text": "處理約 4TB 的血管造影 DICOM 資料時，建議流程為：（1）先建立檔案清單（manifest），記錄路徑、大小與雜湊值，作為可重跑的依據；（2）以 pydicom 的 stop_before_pixels 只讀標頭，快速建立中繼資料索引；（3）依 SOP Class UID 篩出 XA 影像；（4）去識別化後再解壓像素並轉存成分片（shard）檔；（5）每個步驟寫入完成紀錄，支援中斷後續跑（checkpoint/resume），並以多行程平行處理。"
+  },
+  {
+    "id": "vlm-rag#1",
+    "source_id": "vlm-rag",
+    "source_title": "Vision-Language Models (VLMs) and RAG Integration for Medical Report Generation",
+    "citation": "綜合整理稿。參考：Lewis P, et al. Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks. NeurIPS 2020.",
+    "heading": "視覺語言模型的架構",
+    "text": "視覺語言模型（vision-language model, VLM）通常由三部分組成：影像編碼器（vision encoder）把影像轉成特徵、投影層（projector）把影像特徵對齊到語言模型的向量空間、大型語言模型（LLM）根據影像特徵與文字提示產生文字。本機可用的開源 VLM 例如 Qwen2.5-VL。"
+  },
+  {
+    "id": "vlm-rag#2",
+    "source_id": "vlm-rag",
+    "source_title": "Vision-Language Models (VLMs) and RAG Integration for Medical Report Generation",
+    "citation": "綜合整理稿。參考：Lewis P, et al. Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks. NeurIPS 2020.",
+    "heading": "檢索增強生成（RAG）",
+    "text": "檢索增強生成（retrieval-augmented generation, RAG）在生成前先從外部知識庫檢索相關段落，再把段落放進提示中，讓模型根據證據回答。基本步驟為：切分文件（chunking）、以嵌入模型（embedding model）轉成向量、依問題檢索前 k 個最相似段落、把段落連同引用編號交給模型生成。本機可用的多語嵌入模型例如 bge-m3。"
+  },
+  {
+    "id": "vlm-rag#3",
+    "source_id": "vlm-rag",
+    "source_title": "Vision-Language Models (VLMs) and RAG Integration for Medical Report Generation",
+    "citation": "綜合整理稿。參考：Lewis P, et al. Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks. NeurIPS 2020.",
+    "heading": "RAG 對醫療報告的價值",
+    "text": "醫療報告需要符合最新指引，而模型訓練資料可能過時。RAG 讓報告可以引用指引原文段落，並附上出處，方便醫師核對。知識庫更新時只需重新建立索引，不必重新訓練模型。"
+  },
+  {
+    "id": "vlm-rag#4",
+    "source_id": "vlm-rag",
+    "source_title": "Vision-Language Models (VLMs) and RAG Integration for Medical Report Generation",
+    "citation": "綜合整理稿。參考：Lewis P, et al. Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks. NeurIPS 2020.",
+    "heading": "幻覺與防護",
+    "text": "大型語言模型可能產生看似合理但沒有根據的內容，稱為幻覺（hallucination）。常見防護方法包括：要求每個結論附上引用段落編號、以第二階段模型或規則檢查結論是否被引用段落支持、檢查數字與單位是否出現在原文、以 JSON schema 限制輸出格式。未通過檢查的內容應該剔除或標記，而不是直接呈現給使用者。"
+  },
+  {
+    "id": "vlm-rag#5",
+    "source_id": "vlm-rag",
+    "source_title": "Vision-Language Models (VLMs) and RAG Integration for Medical Report Generation",
+    "citation": "綜合整理稿。參考：Lewis P, et al. Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks. NeurIPS 2020.",
+    "heading": "評估方式",
+    "text": "自動化指標如 BLEU、ROUGE 只衡量文字重疊，無法反映臨床正確性。醫療報告生成應加入臨床正確性評估，例如關鍵發現的召回率與錯誤率，並由臨床醫師進行盲測評分。"
+  },
+  {
+    "id": "vlm-rag#6",
+    "source_id": "vlm-rag",
+    "source_title": "Vision-Language Models (VLMs) and RAG Integration for Medical Report Generation",
+    "citation": "綜合整理稿。參考：Lewis P, et al. Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks. NeurIPS 2020.",
+    "heading": "本機部署與責任",
+    "text": "在醫院內以本機模型（例如透過 Ollama）執行，可以避免病人影像與報告上傳到外部雲端服務。AI 產生的報告只能作為草稿，最終內容必須由醫師審閱與簽署（human-in-the-loop）。"
+  }
+]
