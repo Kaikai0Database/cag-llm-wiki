@@ -7,7 +7,7 @@
   <meta name="referrer" content="no-referrer">
   <title>教學簡報</title>
   <link rel="icon" href="data:,">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=2">
 </head>
 <body data-page="slides">
   <header class="site-header">
@@ -24,16 +24,15 @@
 
   <main class="container" id="main">
     <div class="deck-bar">
-      <button class="btn ghost" id="prev" type="button" aria-label="上一張">← 上一張</button>
-      <span class="tag" id="counter" aria-live="polite">0 / 0</span>
-      <progress id="progress" max="1" value="0"></progress>
-      <button class="btn" id="next" type="button" aria-label="下一張">下一張 →</button>
+      <button class="btn ghost" id="prev" type="button" aria-label="上一張" aria-keyshortcuts="ArrowLeft">←</button>
+      <progress id="progress" max="1" value="0" aria-label="簡報進度"></progress>
+      <span class="counter" id="counter" aria-live="polite">0 / 0</span>
+      <button class="btn" id="next" type="button" aria-label="下一張" aria-keyshortcuts="ArrowRight">下一張 →</button>
     </div>
     <div id="stage"></div>
-    <p class="small">鍵盤：← → 換頁，Home / End 跳到頭尾。每個重點後面的標籤是 Wiki 引用段落，點了可以核對原文。</p>
   </main>
 
-  <script src="common.js"></script>
-  <script src="slides.js"></script>
+  <script src="common.js?v=2"></script>
+  <script src="slides.js?v=2"></script>
 </body>
 </html>

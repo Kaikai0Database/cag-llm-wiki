@@ -20,13 +20,13 @@
     const items = (s.bullets || []).map((b) => {
       const c = b.cite || {};
       const href = `wiki.html?src=${encodeURIComponent(c.source_id || "")}#${App.chunkAnchor(c.chunk_id || "")}`;
-      return h("li", {}, [document.createTextNode(b.text), tag(c.chunk_id || "無引用", "", href)]);
+      return h("li", {}, [document.createTextNode(b.text), tag(c.chunk_id || "無引用", "mono", href)]);
     });
     const srcs = [...new Set((s.bullets || []).map((b) => (b.cite || {}).source_title).filter(Boolean))];
     return [
       h("h2", { text: s.title }),
       h("ul", { cls: "points" }, items),
-      h("div", { cls: "slide-foot" }, [h("p", { cls: "small", text: `來源：${srcs.join("；")}` })]),
+      h("div", { cls: "slide-foot" }, [h("p", { text: srcs.join("；") })]),
     ];
   }
 
@@ -43,7 +43,7 @@
           tag(`迭代 ${v.iterations ?? 0} 次`),
           (v.empty_sections || []).length ? tag(`空章節：${v.empty_sections.join("、")}`, "warn") : null,
         ].filter(Boolean)),
-        h("p", { cls: "small", text: "本簡報由本機 LLM 依 Wiki 段落生成，僅供教學；臨床決策請以指引原文為準。" }),
+        h("p", { text: "本機 LLM 依 Wiki 段落生成，僅供教學；臨床請以指引原文為準。" }),
       ]),
     ];
   }
@@ -89,8 +89,12 @@
       else if (e.key === "Home") show(0);
       else if (e.key === "End") show(slides.length - 1);
     });
-    const start = parseInt(location.hash.slice(1), 10);
-    show(Number.isFinite(start) ? start - 1 : 0);
+    const fromHash = () => {
+      const n = parseInt(location.hash.slice(1), 10);
+      return Number.isFinite(n) ? n - 1 : 0;
+    };
+    window.addEventListener("hashchange", () => { if (fromHash() !== idx) show(fromHash()); });
+    show(fromHash());
   } catch (err) {
     App.showError(document.getElementById("main"), err);
   }

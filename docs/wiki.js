@@ -5,34 +5,41 @@
   const main = document.getElementById("main");
   try {
     const [data, chunks] = await Promise.all([App.loadJSON("data.json"), App.loadJSON("wiki/chunks.json")]);
-    App.renderHeader(data.site);
+    App.renderHeader();
     const sources = data.sources || [];
     const want = new URLSearchParams(location.search).get("src");
     const current = sources.find((s) => s.id === want) || sources[0];
-    if (!current) throw new Error("Wiki 尚無來源，請先執行 python -m pipeline ingest");
+    if (!current) throw new Error("Wiki 還沒有來源，請先執行 python -m pipeline ingest");
 
-    document.getElementById("source-tabs").append(tagList(sources.map((s) =>
-      tag(s.id, s.id === current.id ? "accent" : "", `wiki.html?src=${encodeURIComponent(s.id)}`))));
+    document.getElementById("source-tabs").append(tagList(sources.map((s) => {
+      const t = tag(s.id, s.id === current.id ? "mono accent" : "mono", `wiki.html?src=${encodeURIComponent(s.id)}`);
+      if (s.id === current.id) t.setAttribute("aria-current", "page");
+      return t;
+    })));
 
-    const body = document.getElementById("wiki-body");
     const mine = chunks.filter((c) => c.source_id === current.id);
-    body.append(h("h2", { cls: "section-title", text: current.title }));
-    body.append(h("div", { cls: "card" }, [
-      h("p", { cls: "citation", text: current.citation }),
-      current.note ? h("p", { cls: "small", text: current.note }) : null,
-      tagList([tag(`${mine.length} 段`, "accent"),
-        tag("Wiki 原始 Markdown", "", current.wiki_page)]),
+    const isDraft = /整理稿/.test(current.note || "");
+    const body = document.getElementById("wiki-body");
+    body.append(h("header", { cls: "source-head" }, [
+      h("h2", { text: current.title }),
+      tagList([tag(`${mine.length} 段`), isDraft ? tag("整理稿，非原文全文", "warn") : null].filter(Boolean)),
+      h("details", {}, [
+        h("summary", { text: "引用與說明" }),
+        h("p", { cls: "citation", text: current.citation }),
+        current.note ? h("p", { cls: "citation", text: current.note }) : null,
+        h("p", { cls: "citation" }, [h("a", { text: "原始 Markdown", attrs: { href: current.wiki_page } })]),
+      ]),
     ]));
-    const grid = h("div", { cls: "grid section-title" });
-    for (const c of mine) {
-      grid.append(h("article", { cls: "card chunk", attrs: { id: App.chunkAnchor(c.id) } }, [
-        tagList([tag(c.id, "accent")]),
-        h("h3", { text: c.heading }),
+    body.append(h("ol", { cls: "chunks" }, mine.map((c) =>
+      h("li", { cls: "chunk", attrs: { id: App.chunkAnchor(c.id) } }, [
+        h("div", { cls: "head" }, [tag(c.id, "mono"), h("h3", { text: c.heading })]),
         h("p", { text: c.text }),
-      ]));
+      ]))));
+    const target = location.hash && document.getElementById(location.hash.slice(1));
+    if (target) {
+      target.classList.add("is-target");
+      target.scrollIntoView();
     }
-    body.append(grid);
-    if (location.hash) document.getElementById(location.hash.slice(1))?.scrollIntoView();
   } catch (err) {
     App.showError(main, err);
   }
