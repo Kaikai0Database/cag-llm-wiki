@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="t">
+<title id="t">DICOM Part 10 檔案結構與 XA 關鍵標籤</title>
+<defs>
+<style>
+svg{background:#fff}
+text{font-family:"Noto Sans TC","Microsoft JhengHei","PingFang TC",sans-serif;fill:#2a2020;text-anchor:middle}
+.m{fill:#6f6463}.a{fill:#b3261e}.b{font-weight:700}.s{text-anchor:start}
+.mono{font-family:ui-monospace,"Cascadia Mono",Consolas,monospace}
+.surf{fill:#fff;stroke:#ddd5d3;stroke-width:1.5}.box{fill:#f4f0ef;stroke:#ddd5d3;stroke-width:1.5}
+.abox{fill:#fbe9e7;stroke:#b3261e;stroke-width:1.5}.frame{fill:#2a2020}.vw{fill:none;stroke:#fff;stroke-width:1.6;stroke-linecap:round}
+.ln{fill:none;stroke:#8f8381;stroke-width:1.5}
+@media (prefers-color-scheme:dark){svg{background:oklch(0.21 0.008 25)}text{fill:#f0eaea}.m{fill:#b9adac}.a{fill:#ff8a80}.surf{fill:#211b1a;stroke:#463c3b}.box{fill:#2d2625;stroke:#463c3b}.abox{fill:#4a2523;stroke:#ff8a80}.frame{fill:#0e0a0a}.ln{stroke:#8a7e7d}}
+</style>
+</defs>
+<g>
+<rect class="frame" x="380" y="24" width="52" height="40" rx="3"/><path class="vw" d="M388,30 C398,40 402,48 404,60 M404,60 C408,48 416,40 426,36"/>
+<rect class="frame" x="440" y="24" width="52" height="40" rx="3"/><path class="vw" d="M448,30 C458,40 462,48 464,60 M464,60 C468,48 476,40 486,36"/>
+<rect class="frame" x="500" y="24" width="52" height="40" rx="3"/><path class="vw" d="M508,30 C518,40 522,48 524,60 M524,60 C528,48 536,40 546,36"/>
+<rect class="frame" x="560" y="24" width="52" height="40" rx="3"/><path class="vw" d="M568,30 C578,40 582,48 584,60 M584,60 C588,48 596,40 606,36"/>
+<text class="m" x="496" y="86" font-size="11.5">多影格電影序列（cine）</text>
+</g>
+
+<rect class="box" x="20" y="100" width="100" height="62" rx="8"/>
+<text class="b" x="70" y="127" font-size="13">前導區</text>
+<text class="m mono" x="70" y="148" font-size="11">128 bytes</text>
+<rect class="abox" x="120" y="100" width="70" height="62"/>
+<text class="a b mono" x="155" y="137" font-size="15">DICM</text>
+<rect class="box" x="190" y="100" width="170" height="62"/>
+<text class="b" x="275" y="127" font-size="13">檔案中繼資訊</text>
+<text class="m mono" x="275" y="148" font-size="11">Group 0002</text>
+<rect class="abox" x="360" y="100" width="260" height="62" rx="8"/>
+<text class="b" x="490" y="127" font-size="14">資料集 Data Set</text>
+<text class="m" x="490" y="148" font-size="11">影像標籤 ＋ 像素資料</text>
+
+<path class="ln" d="M275,162 V190 M490,162 V190"/>
+<rect class="surf" x="20" y="190" width="336" height="150" rx="12"/>
+<text class="b s" x="36" y="216" font-size="12.5">固定 Explicit VR Little Endian</text>
+<g class="mono s" font-size="10.5">
+<text class="s mono" x="36" y="242">(0002,0002) Media Storage SOP Class UID</text>
+<text class="s mono" x="36" y="264">(0002,0003) Media Storage SOP Instance UID</text>
+<text class="s mono" x="36" y="286">(0002,0010) Transfer Syntax UID</text>
+<text class="s mono m" x="36" y="312">JPEG Lossless = 1.2.840.10008.1.2.4.70</text>
+</g>
+<rect class="surf" x="370" y="190" width="250" height="150" rx="12"/>
+<text class="b s" x="386" y="216" font-size="12.5">XA 影像</text>
+<g font-size="10.5">
+<text class="s mono m" x="386" y="240">SOP 1.2.840.10008.5.1.4.1.1.12.1</text>
+<text class="s mono" x="386" y="262">(0028,0008) Number of Frames</text>
+<text class="s mono" x="386" y="284">(0018,1063) Frame Time</text>
+<text class="s mono" x="386" y="306">(0018,1510) LAO / RAO</text>
+<text class="s mono" x="386" y="328">(0018,1511) 頭位 / 足位</text>
+</g>
+</svg>

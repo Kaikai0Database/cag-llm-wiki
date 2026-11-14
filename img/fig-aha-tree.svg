@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 410" role="img" aria-labelledby="t">
+<title id="t">AHA/SCCT 16 分段冠狀動脈樹示意圖</title>
+<defs>
+<style>
+svg{background:#fff}
+text{font-family:"Noto Sans TC","Microsoft JhengHei","PingFang TC",sans-serif;fill:#2a2020;text-anchor:middle}
+.m{fill:#6f6463}.a{fill:#b3261e}.b{font-weight:700}.s{text-anchor:start}
+.ao{fill:#f4f0ef;stroke:#ddd5d3;stroke-width:1.5}
+.v{fill:none;stroke:#b3261e;stroke-linecap:round}.d{stroke-dasharray:7 7}
+.badge{fill:#fff;stroke:#b3261e;stroke-width:2}
+@media (prefers-color-scheme:dark){svg{background:oklch(0.21 0.008 25)}text{fill:#f0eaea}.m{fill:#b9adac}.a{fill:#ff8a80}.ao{fill:#2d2625;stroke:#463c3b}.v{stroke:#ff8a80}.badge{fill:#211b1a;stroke:#ff8a80}}
+</style>
+</defs>
+<circle class="ao" cx="320" cy="50" r="26"/>
+<text class="m" x="320" y="54" font-size="11">主動脈</text>
+
+<!-- RCA -->
+<path class="v" stroke-width="7" d="M300,68 Q250,68 220,110 Q170,160 160,225 Q165,300 230,335"/>
+<path class="v d" stroke-width="5" d="M230,335 Q270,380 325,395"/>
+<path class="v d" stroke-width="5" d="M230,335 Q280,330 335,320"/>
+<!-- LM / LAD -->
+<path class="v" stroke-width="8" d="M340,68 Q372,76 400,100"/>
+<path class="v" stroke-width="7" d="M400,100 Q398,140 392,172 Q386,222 382,272 Q378,322 372,378"/>
+<path class="v" stroke-width="4.5" d="M396,150 Q425,165 458,212"/>
+<path class="v" stroke-width="4.5" d="M385,245 Q410,262 440,302"/>
+<!-- LCx -->
+<path class="v" stroke-width="7" d="M400,100 Q452,104 502,130 Q562,150 594,234"/>
+<path class="v" stroke-width="4.5" d="M502,130 Q508,185 496,245"/>
+<path class="v" stroke-width="4.5" d="M576,196 Q580,250 560,300"/>
+<path class="v d" stroke-width="5" d="M594,234 Q604,330 520,388"/>
+
+<text class="m b" x="118" y="180" font-size="13">RCA</text>
+<text class="m b" x="340" y="350" font-size="13">LAD</text>
+<text class="m b" x="470" y="92" font-size="13">LCx</text>
+<text class="m b" x="372" y="56" font-size="13">LM</text>
+
+<g font-size="12" class="b">
+<circle class="badge" cx="255" cy="79" r="12"/><text class="a" x="255" y="83">1</text>
+<circle class="badge" cx="180" cy="163" r="12"/><text class="a" x="180" y="167">2</text>
+<circle class="badge" cx="180" cy="290" r="12"/><text class="a" x="180" y="294">3</text>
+<circle class="badge" cx="274" cy="372" r="12"/><text class="a" x="274" y="376">4</text>
+<circle class="badge" cx="371" cy="80" r="12"/><text class="a" x="371" y="84">5</text>
+<circle class="badge" cx="397" cy="138" r="12"/><text class="a" x="397" y="142">6</text>
+<circle class="badge" cx="387" cy="222" r="12"/><text class="a" x="387" y="226">7</text>
+<circle class="badge" cx="378" cy="324" r="12"/><text class="a" x="378" y="328">8</text>
+<circle class="badge" cx="426" cy="173" r="12"/><text class="a" x="426" y="177">9</text>
+<circle class="badge" cx="412" cy="268" r="12"/><text class="a" x="412" y="272">10</text>
+<circle class="badge" cx="452" cy="110" r="12"/><text class="a" x="452" y="114">11</text>
+<circle class="badge" cx="504" cy="186" r="12"/><text class="a" x="504" y="190">12</text>
+<circle class="badge" cx="555" cy="166" r="12"/><text class="a" x="555" y="170">13</text>
+<circle class="badge" cx="574" cy="249" r="12"/><text class="a" x="574" y="253">14</text>
+<circle class="badge" cx="581" cy="321" r="12"/><text class="a" x="581" y="325">15</text>
+<circle class="badge" cx="281" cy="329" r="12"/><text class="a" x="281" y="333">16</text>
+</g>
+
+<g font-size="12">
+<text class="s" x="20" y="322"><tspan class="b">RCA</tspan> 1–4、16</text>
+<text class="s" x="20" y="342"><tspan class="b">LM</tspan> 5 · <tspan class="b">LAD</tspan> 6–10</text>
+<text class="s" x="20" y="362"><tspan class="b">LCx</tspan> 11–15</text>
+<path class="v d" stroke-width="4" d="M22,384 H56"/>
+<text class="m s" x="64" y="388">依優勢型態（4、15、16）</text>
+</g>
+</svg>

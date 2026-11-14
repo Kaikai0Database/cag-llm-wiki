@@ -16,11 +16,11 @@
         "RAG"
       ],
       "slide_count": 13,
-      "generated_at": "2026-11-15T01:34:15",
+      "generated_at": "2026-11-15T02:28:19",
       "model": "qwen3:8b",
       "verification": {
         "kept": 51,
-        "dropped": 1,
+        "dropped": 2,
         "iterations": 1,
         "empty_sections": []
       }

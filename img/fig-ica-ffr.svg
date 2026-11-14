@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 395" role="img" aria-labelledby="t">
+<title id="t">直徑狹窄 40–90% 的病灶建議做 FFR/iFR；複雜病灶 PCI 以 IVUS/OCT 引導</title>
+<defs>
+<marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="ahf"/></marker>
+<style>
+svg{background:#fff}
+text{font-family:"Noto Sans TC","Microsoft JhengHei","PingFang TC",sans-serif;fill:#2a2020;text-anchor:middle}
+.m{fill:#6f6463}.a{fill:#b3261e}.b{font-weight:700}.s{text-anchor:start}
+.box{fill:#f4f0ef;stroke:#ddd5d3;stroke-width:1.5}.surf{fill:#fff;stroke:#ddd5d3;stroke-width:1.5}
+.abox{fill:#fbe9e7;stroke:#b3261e;stroke-width:1.5}.zone{fill:#fbe9e7;stroke:#b3261e;stroke-width:1.5;stroke-dasharray:5 4}
+.wall{fill:#efe7e5}.lumen{fill:#b3261e}.cat{fill:#fff}
+.ln{fill:none;stroke:#8f8381;stroke-width:1.5}.arrow{fill:none;stroke:#6f6463;stroke-width:2;marker-end:url(#ah)}.ahf{fill:#6f6463}
+@media (prefers-color-scheme:dark){svg{background:oklch(0.21 0.008 25)}text{fill:#f0eaea}.m{fill:#b9adac}.a{fill:#ff8a80}.box{fill:#2d2625;stroke:#463c3b}.surf{fill:#211b1a;stroke:#463c3b}.abox,.zone{fill:#4a2523;stroke:#ff8a80}.wall{fill:#3a3130}.lumen{fill:#ff8a80}.cat{fill:#211b1a}.ln{stroke:#8a7e7d}.arrow{stroke:#b9adac}.ahf{fill:#b9adac}}
+</style>
+</defs>
+<text class="m s" x="20" y="28" font-size="13">直徑狹窄（%DS）越大，殘餘管腔越窄</text>
+<rect class="zone" x="264" y="40" width="280" height="138" rx="10"/>
+<rect class="wall" x="40" y="62" width="560" height="56" rx="6"/>
+<polygon class="lumen" points="40,66 600,90 600,90 40,114"/>
+<path class="ln" d="M40,132 H600 M40,126 V138 M152,126 V138 M264,126 V138 M376,126 V138 M488,126 V138 M544,126 V138 M600,126 V138"/>
+<text class="m" x="40" y="156" font-size="11">0%</text>
+<text class="m" x="152" y="156" font-size="11">20%</text>
+<text class="a b" x="264" y="156" font-size="12">40%</text>
+<text class="m" x="376" y="156" font-size="11">60%</text>
+<text class="m" x="488" y="156" font-size="11">80%</text>
+<text class="a b" x="544" y="156" font-size="12">90%</text>
+<text class="m" x="606" y="156" font-size="11">100%</text>
+<text class="a b" x="404" y="172" font-size="12.5">中間程度病灶</text>
+<path class="arrow" d="M404,180 V200"/>
+<rect class="abox" x="274" y="204" width="260" height="62" rx="12"/>
+<text class="b" x="404" y="230" font-size="16">FFR / iFR 功能評估</text>
+<text class="m" x="404" y="252" font-size="11.5">或 angiography-derived FFR（如 QFR）</text>
+
+<rect class="surf" x="20" y="286" width="600" height="96" rx="14"/>
+<circle class="box" cx="84" cy="334" r="34"/>
+<circle class="lumen" cx="84" cy="334" r="22"/>
+<circle class="cat" cx="80" cy="338" r="6"/>
+<text class="b s" x="140" y="322" font-size="15">複雜病灶的 PCI：IVUS 或 OCT 引導</text>
+<rect class="box" x="140" y="338" width="66" height="26" rx="13"/><text x="173" y="356" font-size="12">左主幹</text>
+<rect class="box" x="214" y="338" width="80" height="26" rx="13"/><text x="254" y="356" font-size="12">真性分叉</text>
+<rect class="box" x="302" y="338" width="66" height="26" rx="13"/><text x="335" y="356" font-size="12">長病灶</text>
+</svg>

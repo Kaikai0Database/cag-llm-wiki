@@ -198,6 +198,26 @@ details[open] summary { margin-bottom: 8px; }
 .slide ul.points li::marker { color: var(--accent); }
 .slide ul.points .tag { margin-left: 8px; vertical-align: 3px; }
 .slide .slide-foot { margin-top: auto; display: grid; gap: 10px; font-size: .875rem; color: var(--muted); }
+/* 圖為主、文字為輔 */
+body[data-page="slides"] .container { max-width: 1240px; }
+.slide-split { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 4fr); gap: 36px; align-items: center; flex: 1; }
+.fig { margin: 0; display: grid; gap: 10px; }
+.fig img { display: block; width: 100%; height: auto; }
+.fig figcaption { font-size: .8125rem; color: var(--muted); }
+.slide .slide-split ul.points { font-size: 1rem; line-height: 1.65; gap: 12px; }
+.fig a { display: block; border-radius: var(--radius-sm); cursor: zoom-in; }
+.slide .more { margin-top: 14px; }
+.slide .more summary { cursor: pointer; color: var(--muted); font-size: .875rem; width: fit-content; }
+.slide .more summary:hover { color: var(--ink); }
+.slide .more[open] summary { margin-bottom: 12px; }
+.title-split { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: 40px; align-items: center; }
+.title-text { display: grid; gap: 18px; }
+.title-split .fig img { max-height: 420px; }
+@media (max-width: 960px) {
+  .slide-split { grid-template-columns: 1fr; gap: 20px; }
+  .slide-split .fig img { max-height: 420px; }
+}
+
 .refs { margin: 0; padding-left: 1.2em; display: grid; gap: 14px; }
 .refs .citation { margin-top: 2px; }
 .status { display: grid; gap: 8px; margin-top: 32px; }
@@ -215,6 +235,12 @@ details[open] summary { margin-bottom: 8px; }
   .slide h2 { font-size: 1.5rem; }
   .slide.title-slide h1 { font-size: 1.75rem; }
   .slide ul.points { font-size: 1.0625rem; gap: 12px; }
+  .slide-split, .title-split { grid-template-columns: 1fr; gap: 20px; }
+  .slide.card:has(.slide-split) { padding-inline: 14px; }
+  .slide .slide-split ul.points { font-size: .9375rem; }
+  .slide-split .fig figcaption::after { content: "・點圖放大"; color: var(--accent); }
+  .title-split .fig { order: -1; }
+  .title-split .fig img { max-height: 220px; }
   .deck-bar .btn { padding: 0 12px; }
 }
 @media (prefers-reduced-motion: reduce) {
