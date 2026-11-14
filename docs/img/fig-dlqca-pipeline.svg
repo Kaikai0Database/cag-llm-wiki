@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" role="img" aria-labelledby="t">
+<title id="t">深度學習 QCA 五步驟與評估指標</title>
+<defs>
+<style>
+svg{background:#fff}
+text{font-family:"Noto Sans TC","Microsoft JhengHei","PingFang TC",sans-serif;fill:#2a2020;text-anchor:middle}
+.m{fill:#6f6463}.a{fill:#b3261e}.b{font-weight:700}.s{text-anchor:start}
+.surf{fill:#fff;stroke:#ddd5d3;stroke-width:1.5}.box{fill:#f4f0ef;stroke:#ddd5d3;stroke-width:1.5}
+.abox{fill:#fbe9e7;stroke:#b3261e;stroke-width:1.5}.dark{fill:#2a2020}.lumen{fill:#b3261e}
+.vw{fill:none;stroke:#fff;stroke-linecap:round}.v{fill:none;stroke:#b3261e;stroke-width:4;stroke-linecap:round}
+.g{fill:none;stroke:#2f7a4a;stroke-width:4;stroke-linecap:round}.y{fill:none;stroke:#c08a2a;stroke-width:4;stroke-linecap:round}
+.cl{fill:none;stroke:#fff;stroke-width:1.5;stroke-dasharray:4 3}.bb{fill:none;stroke:#c08a2a;stroke-width:2;stroke-dasharray:4 3}
+.chev{fill:none;stroke:#8f8381;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+@media (prefers-color-scheme:dark){svg{background:oklch(0.21 0.008 25)}text{fill:#f0eaea}.m{fill:#b9adac}.a{fill:#ff8a80}.surf{fill:#211b1a;stroke:#463c3b}.box{fill:#2d2625;stroke:#463c3b}.abox{fill:#4a2523;stroke:#ff8a80}.dark{fill:#0e0a0a}.lumen{fill:#ff8a80}.v{stroke:#ff8a80}.g{stroke:#8fd6a5}.y{stroke:#ffc56b}.cl{stroke:#2a1513}.bb{stroke:#ffc56b}.chev{stroke:#8a7e7d}}
+</style>
+</defs>
+<!-- 1 關鍵影格 -->
+<rect class="surf" x="20" y="30" width="100" height="90" rx="10"/>
+<rect class="box" x="34" y="44" width="52" height="38" rx="3"/>
+<rect class="box" x="44" y="54" width="52" height="38" rx="3"/>
+<rect class="abox" x="54" y="64" width="52" height="38" rx="3"/>
+<!-- 2 分割 -->
+<rect class="surf" x="145" y="30" width="100" height="90" rx="10"/>
+<rect class="dark" x="159" y="42" width="72" height="66" rx="4"/>
+<path class="vw" stroke-width="3" d="M170,50 C182,62 190,72 196,98 M196,98 C200,80 210,66 222,58 M184,66 C176,78 172,88 170,100 M208,72 C214,84 220,92 224,100"/>
+<!-- 3 分段標註 -->
+<rect class="surf" x="270" y="30" width="100" height="90" rx="10"/>
+<path class="v" d="M290,48 C302,60 310,70 316,96"/>
+<path class="g" d="M316,96 C320,78 330,64 350,54"/>
+<path class="y" d="M304,64 C296,76 292,88 290,104"/>
+<path class="y" d="M328,70 C336,82 342,92 348,104"/>
+<!-- 4 中心線與直徑 -->
+<rect class="surf" x="395" y="30" width="100" height="90" rx="10"/>
+<rect class="lumen" x="405" y="62" width="80" height="26" rx="3"/>
+<path class="cl" d="M405,75 H485"/>
+<path class="vw" stroke-width="1.5" d="M417,64 V86 M433,64 V86 M449,64 V86 M465,64 V86"/>
+<!-- 5 狹窄 -->
+<rect class="surf" x="520" y="30" width="100" height="90" rx="10"/>
+<path class="lumen" d="M530,62 H552 C560,62 564,71 570,71 C576,71 580,62 588,62 H610 V88 H588 C580,88 576,79 570,79 C564,79 560,88 552,88 H530 Z"/>
+<rect class="bb" x="550" y="54" width="40" height="42" rx="3"/>
+<text class="a b" x="570" y="48" font-size="11">%DS</text>
+
+<path class="chev" d="M127,69 L135,75 L127,81 M252,69 L260,75 L252,81 M377,69 L385,75 L377,81 M502,69 L510,75 L502,81"/>
+
+<g font-size="14" class="b">
+<text x="70" y="146">1 關鍵影格</text><text x="195" y="146">2 血管分割</text><text x="320" y="146">3 分段標註</text>
+<text x="445" y="146">4 中心線＋直徑</text><text x="570" y="146">5 狹窄偵測</text>
+</g>
+<g font-size="11" class="m">
+<text x="70" y="166">顯影最佳</text><text x="195" y="166">U-Net / nnU-Net</text><text x="320" y="166">對應解剖分段</text>
+<text x="445" y="166">沿中心線量直徑</text><text x="570" y="166">偵測框或幾何量測</text>
+</g>
+
+<text class="m s" x="20" y="214" font-size="12.5">評估指標</text>
+<rect class="box" x="20" y="226" width="160" height="32" rx="16"/><text x="100" y="247" font-size="12">分割：Dice · IoU</text>
+<rect class="box" x="190" y="226" width="200" height="32" rx="16"/><text x="290" y="247" font-size="12">偵測：敏感度 · 精確度 · F1</text>
+<rect class="box" x="400" y="226" width="220" height="32" rx="16"/><text x="510" y="247" font-size="12">%DS：MAE · Bland-Altman</text>
+</svg>

@@ -16,6 +16,7 @@ docs/                所有頁面與產出
   slides.html        簡報播放器
   style.css          共用樣式（只用 .card / .tag）
   common.js          共用工具（只用 textContent）
+  img/*.svg          簡報用的圖（手繪 SVG，依 Wiki 段落繪製，不含程式碼與外部連結）
   data.json          網站資料：來源清單 + 簡報清單
   data/decks/*.json  每份簡報的擴充 JSON
   wiki/              chunks.json、embeddings.json、sources/*.md、index.md、log.md
@@ -50,6 +51,9 @@ python -m http.server 8765 --bind 127.0.0.1 --directory docs   # 預覽 http://1
 換模型：`$env:CAG_CHAT_MODEL="gemma4-12b-qat-local"`。`OLLAMA_URL` 只接受本機位址。
 
 新增主題：複製 `decks/cag-esc-2024.json`，改 `slug`（小寫英數與 `-`）和章節，再跑 `build`。
+
+簡報以圖為主：每個章節要有 `figure`（`src` 只能是 `img/<名稱>.svg`，`alt` 必填，`caption` 寫依據的段落）。
+頁面上只露出 3 個重點，其餘收在「還有 N 點」。測試會檢查每章都有圖、圖檔存在，而且 SVG 裡沒有程式碼或外部連結。
 
 ## 部署（GitHub Pages）
 

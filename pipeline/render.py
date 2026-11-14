@@ -5,6 +5,18 @@ from datetime import datetime
 from pathlib import Path
 
 SLUG = re.compile(r"^[a-z0-9-]+$")
+FIGURE_SRC = re.compile(r"^img/[a-z0-9-]+\.svg$")  # 只允許 docs/img 下的本地 SVG
+
+
+def _clean_slide(slide):
+    """figure 路徑不合法就整個拿掉，不讓外部或奇怪的路徑進網頁。"""
+    fig = slide.get("figure")
+    if fig is None:
+        return slide
+    out = {k: v for k, v in slide.items() if k != "figure"}
+    if isinstance(fig, dict) and FIGURE_SRC.match(str(fig.get("src", ""))) and fig.get("alt"):
+        out["figure"] = {"src": fig["src"], "alt": str(fig["alt"]), "caption": str(fig.get("caption", ""))}
+    return out
 
 
 def _read(path, default):
@@ -35,9 +47,12 @@ def write_deck(state, docs_dir, model):
     rep = state["report"]
     verification = {"kept": rep["kept"], "dropped": len(rep["dropped"]),
                     "iterations": rep["iterations"], "empty_sections": rep["empty_sections"]}
-    slides = ([{"type": "title", "title": spec["title"], "subtitle": spec.get("subtitle", ""),
-                "tags": spec.get("tags", [])}]
-              + state["slides"]
+    title_slide = {"type": "title", "title": spec["title"], "subtitle": spec.get("subtitle", ""),
+                   "tags": spec.get("tags", [])}
+    if spec.get("cover"):
+        title_slide["figure"] = spec["cover"]
+    slides = ([_clean_slide(title_slide)]
+              + [_clean_slide(s) for s in state["slides"]]
               + [{"type": "references", "title": "參考資料與檢核紀錄",
                   "items": list(used.values()), "verification": verification}])
     deck = {"slug": slug, "title": spec["title"], "subtitle": spec.get("subtitle", ""),

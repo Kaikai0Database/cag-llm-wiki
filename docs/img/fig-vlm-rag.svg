@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="t">
+<title id="t">VLM 與 RAG 結合產生醫療報告草稿</title>
+<defs>
+<marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="ahf"/></marker>
+<style>
+svg{background:#fff}
+text{font-family:"Noto Sans TC","Microsoft JhengHei","PingFang TC",sans-serif;fill:#2a2020;text-anchor:middle}
+.m{fill:#6f6463}.a{fill:#b3261e}.ok{fill:#2f7a4a}.b{font-weight:700}.s{text-anchor:start}
+.mono{font-family:ui-monospace,"Cascadia Mono",Consolas,monospace}
+.surf{fill:#fff;stroke:#ddd5d3;stroke-width:1.5}.box{fill:#f4f0ef;stroke:#ddd5d3;stroke-width:1.5}
+.abox{fill:#fbe9e7;stroke:#b3261e;stroke-width:1.5}.okbox{fill:#e3f3e8;stroke:#2f7a4a;stroke-width:1.5}
+.frame{fill:#2a2020}.vw{fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round}.doc{fill:none;stroke:#b9adab;stroke-width:2;stroke-linecap:round}
+.arrow{fill:none;stroke:#6f6463;stroke-width:2;marker-end:url(#ah)}.ahf{fill:#6f6463}
+@media (prefers-color-scheme:dark){svg{background:oklch(0.21 0.008 25)}text{fill:#f0eaea}.m{fill:#b9adac}.a{fill:#ff8a80}.ok{fill:#8fd6a5}.surf{fill:#211b1a;stroke:#463c3b}.box{fill:#2d2625;stroke:#463c3b}.abox{fill:#4a2523;stroke:#ff8a80}.okbox{fill:#1f3a28;stroke:#8fd6a5}.frame{fill:#0e0a0a}.doc{stroke:#6d6160}.arrow{stroke:#b9adac}.ahf{fill:#b9adac}}
+</style>
+</defs>
+<text class="a b s" x="20" y="34" font-size="13">VLM</text>
+<rect class="frame" x="20" y="46" width="80" height="62" rx="6"/>
+<path class="vw" d="M32,54 C46,68 54,80 58,102 M58,102 C62,84 74,70 90,62 M46,72 C40,84 36,94 34,104"/>
+<text class="m" x="60" y="126" font-size="11">造影影像</text>
+<rect class="box" x="120" y="46" width="108" height="62" rx="10"/>
+<text class="b" x="174" y="74" font-size="13">影像編碼器</text><text class="m" x="174" y="94" font-size="10.5">vision encoder</text>
+<rect class="box" x="246" y="46" width="108" height="62" rx="10"/>
+<text class="b" x="300" y="74" font-size="13">投影層</text><text class="m" x="300" y="94" font-size="10.5">projector</text>
+
+<text class="a b s" x="20" y="194" font-size="13">RAG</text>
+<rect class="surf" x="20" y="206" width="80" height="62" rx="6"/>
+<path class="doc" d="M32,220 H88 M32,232 H80 M32,244 H88 M32,256 H70"/>
+<text class="m" x="60" y="286" font-size="11">Wiki 段落</text>
+<rect class="box" x="120" y="206" width="108" height="62" rx="10"/>
+<text class="b" x="174" y="234" font-size="13">嵌入＋檢索</text><text class="m mono" x="174" y="254" font-size="10">bge-m3 · top-k</text>
+<rect class="box" x="246" y="206" width="108" height="62" rx="10"/>
+<text class="b" x="300" y="234" font-size="13">引用段落</text><text class="m" x="300" y="254" font-size="10.5">附段落編號</text>
+
+<rect class="abox" x="380" y="46" width="96" height="222" rx="16"/>
+<text class="b" x="428" y="152" font-size="20">LLM</text>
+<text class="m" x="428" y="174" font-size="11">依證據生成</text>
+
+<path class="arrow" d="M100,77 H116"/><path class="arrow" d="M228,77 H242"/><path class="arrow" d="M354,77 H376"/>
+<path class="arrow" d="M100,237 H116"/><path class="arrow" d="M228,237 H242"/><path class="arrow" d="M354,237 H376"/>
+
+<rect class="surf" x="504" y="70" width="116" height="70" rx="12"/>
+<text class="b" x="562" y="100" font-size="13">報告草稿</text><text class="m" x="562" y="121" font-size="10.5">附引用出處</text>
+<rect class="okbox" x="504" y="182" width="116" height="70" rx="12"/>
+<text class="b ok" x="562" y="212" font-size="13">醫師審閱簽署</text><text class="m" x="562" y="233" font-size="10.5">human-in-the-loop</text>
+<path class="arrow" d="M476,105 H500"/><path class="arrow" d="M562,140 V178"/>
+
+<rect class="okbox" x="20" y="306" width="600" height="38" rx="19"/>
+<text x="320" y="330" font-size="12.5">本機執行（Ollama）：病人影像與報告不上傳外部雲端</text>
+</svg>

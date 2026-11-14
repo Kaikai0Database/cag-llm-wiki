@@ -8,25 +8,49 @@
   const prev = document.getElementById("prev");
   const next = document.getElementById("next");
 
+  const VISIBLE_POINTS = 3; // 圖為主：只露出 3 點，其餘收起來
+
+  function figureEl(f) {
+    if (!f || !/^img\/[a-z0-9-]+\.svg$/.test(String(f.src))) return null;
+    return h("figure", { cls: "fig" }, [
+      h("a", { attrs: { href: f.src, target: "_blank", rel: "noopener", title: "開啟大圖" } }, [
+        h("img", { attrs: { src: f.src, alt: f.alt || "", decoding: "async" } }),
+      ]),
+      f.caption ? h("figcaption", { text: f.caption }) : null,
+    ]);
+  }
+
+  function point(b) {
+    const c = b.cite || {};
+    const href = `wiki.html?src=${encodeURIComponent(c.source_id || "")}#${App.chunkAnchor(c.chunk_id || "")}`;
+    return h("li", {}, [document.createTextNode(b.text), tag(c.chunk_id || "無引用", "mono", href)]);
+  }
+
   function titleSlide(s) {
-    return [
+    const fig = figureEl(s.figure);
+    const text = h("div", { cls: "title-text" }, [
       h("h1", { text: s.title }),
       h("p", { cls: "lead", text: s.subtitle }),
       tagList((s.tags || []).map((t) => tag(t, "accent"))),
-    ];
+    ]);
+    return fig ? [h("div", { cls: "title-split" }, [text, fig])] : [text];
   }
 
   function contentSlide(s) {
-    const items = (s.bullets || []).map((b) => {
-      const c = b.cite || {};
-      const href = `wiki.html?src=${encodeURIComponent(c.source_id || "")}#${App.chunkAnchor(c.chunk_id || "")}`;
-      return h("li", {}, [document.createTextNode(b.text), tag(c.chunk_id || "無引用", "mono", href)]);
-    });
-    const srcs = [...new Set((s.bullets || []).map((b) => (b.cite || {}).source_title).filter(Boolean))];
+    const bullets = s.bullets || [];
+    const shown = h("ul", { cls: "points" }, bullets.slice(0, VISIBLE_POINTS).map(point));
+    const rest = bullets.slice(VISIBLE_POINTS);
+    const more = rest.length
+      ? h("details", { cls: "more" }, [
+        h("summary", { text: `還有 ${rest.length} 點` }),
+        h("ul", { cls: "points" }, rest.map(point)),
+      ])
+      : null;
+    const fig = figureEl(s.figure);
+    const side = h("div", { cls: "side" }, [shown, more]);
     return [
       h("h2", { text: s.title }),
-      h("ul", { cls: "points" }, items),
-      h("div", { cls: "slide-foot" }, [h("p", { text: srcs.join("；") })]),
+      fig ? h("div", { cls: "slide-split" }, [fig, side]) : side,
     ];
   }
 

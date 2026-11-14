@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 330" role="img" aria-labelledby="t">
+<title id="t">AHA 1975 狹窄分級與顯著狹窄門檻</title>
+<defs>
+<style>
+svg{background:#fff}
+text{font-family:"Noto Sans TC","Microsoft JhengHei","PingFang TC",sans-serif;fill:#2a2020;text-anchor:middle}
+.m{fill:#6f6463}.a{fill:#b3261e}.b{font-weight:700}.s{text-anchor:start}
+.wall{fill:#efe7e5;stroke:#ddd5d3}.lumen{fill:#b3261e}
+.br{fill:none;stroke:#b3261e;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+@media (prefers-color-scheme:dark){svg{background:oklch(0.21 0.008 25)}text{fill:#f0eaea}.m{fill:#b9adac}.a{fill:#ff8a80}.wall{fill:#3a3130;stroke:#463c3b}.lumen{fill:#ff8a80}.br{stroke:#ff8a80}}
+</style>
+</defs>
+<text class="m s" x="20" y="32" font-size="13">AHA 1975：以管腔直徑縮減百分比分級</text>
+
+<g>
+<rect class="wall" x="15" y="70" width="70" height="80" rx="6"/>
+<path class="lumen" d="M15,74 C38,74 36,74 50,74 C64,74 62,74 85,74 V146 C62,146 64,146 50,146 C36,146 38,146 15,146 Z"/>
+<rect class="wall" x="105" y="70" width="70" height="80" rx="6"/>
+<path class="lumen" d="M105,74 C128,74 126,83 140,83 C154,83 152,74 175,74 V146 C152,146 154,137 140,137 C126,137 128,146 105,146 Z"/>
+<rect class="wall" x="195" y="70" width="70" height="80" rx="6"/>
+<path class="lumen" d="M195,74 C218,74 216,92 230,92 C244,92 242,74 265,74 V146 C242,146 244,128 230,128 C216,128 218,146 195,146 Z"/>
+<rect class="wall" x="285" y="70" width="70" height="80" rx="6"/>
+<path class="lumen" d="M285,74 C308,74 306,101 320,101 C334,101 332,74 355,74 V146 C332,146 334,119 320,119 C306,119 308,146 285,146 Z"/>
+<rect class="wall" x="375" y="70" width="70" height="80" rx="6"/>
+<path class="lumen" d="M375,74 C398,74 396,106.4 410,106.4 C424,106.4 422,74 445,74 V146 C422,146 424,113.6 410,113.6 C396,113.6 398,146 375,146 Z"/>
+<rect class="wall" x="465" y="70" width="70" height="80" rx="6"/>
+<path class="lumen" d="M465,74 C488,74 486,109.6 500,109.6 C514,109.6 512,74 535,74 V146 C512,146 514,110.4 500,110.4 C486,110.4 488,146 465,146 Z"/>
+<rect class="wall" x="555" y="70" width="70" height="80" rx="6"/>
+<path class="lumen" d="M555,74 C578,74 576,110 590,110 C604,110 602,74 625,74 V146 C602,146 604,110 590,110 C576,110 578,146 555,146 Z"/>
+</g>
+<g font-size="15" class="b">
+<text x="50" y="176">0%</text><text x="140" y="176">25%</text><text x="230" y="176">50%</text><text x="320" y="176">75%</text>
+<text x="410" y="176">90%</text><text x="500" y="176">99%</text><text x="590" y="176">100%</text>
+</g>
+<text class="m" x="500" y="196" font-size="11.5">次全阻塞</text>
+<text class="m" x="590" y="196" font-size="11.5">完全阻塞</text>
+
+<text class="b s" x="20" y="240" font-size="14">左主幹（LM）</text>
+<text class="m s" x="20" y="258" font-size="12">≥50% 視為顯著</text>
+<path class="br" d="M195,252 V238 H625 V252"/>
+<text class="a b" x="195" y="230" font-size="12">50%</text>
+
+<text class="b s" x="20" y="294" font-size="14">其他心外膜血管</text>
+<text class="m s" x="20" y="312" font-size="12">≥70% 視為顯著</text>
+<path class="br" d="M302,306 V292 H625 V306"/>
+<text class="a b" x="302" y="284" font-size="12">70%</text>
+</svg>

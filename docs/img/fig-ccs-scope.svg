@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 390" role="img" aria-labelledby="t">
+<title id="t">CCS 的範圍：阻塞性 CAD、ANOCA/INOCA、微血管功能障礙、血管痙攣</title>
+<defs>
+<marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="ahf"/></marker>
+<style>
+svg{background:#fff}
+text{font-family:"Noto Sans TC","Microsoft JhengHei","PingFang TC",sans-serif;fill:#2a2020;text-anchor:middle}
+.m{fill:#6f6463}.b{font-weight:700}
+.surf{fill:#fff;stroke:#ddd5d3;stroke-width:1.5}.abox{fill:#fbe9e7;stroke:#b3261e;stroke-width:1.5}
+.wall{fill:#efe7e5}.lumen{fill:#b3261e}.v{fill:none;stroke:#b3261e;stroke-linecap:round}
+.ln{fill:none;stroke:#b9adab;stroke-width:1.5}.arrow{fill:none;stroke:#6f6463;stroke-width:2;marker-end:url(#ah)}.ahf{fill:#6f6463}
+@media (prefers-color-scheme:dark){svg{background:oklch(0.21 0.008 25)}text{fill:#f0eaea}.m{fill:#b9adac}.surf{fill:#211b1a;stroke:#463c3b}.abox{fill:#4a2523;stroke:#ff8a80}.wall{fill:#3a3130}.lumen{fill:#ff8a80}.v{stroke:#ff8a80}.ln{stroke:#6d6160}.arrow{stroke:#b9adac}.ahf{fill:#b9adac}}
+</style>
+</defs>
+<rect class="abox" x="180" y="26" width="280" height="70" rx="14"/>
+<text class="b" x="320" y="56" font-size="18">慢性冠狀動脈症候群（CCS）</text>
+<text class="m" x="320" y="80" font-size="12.5">冠狀動脈結構及/或功能異常</text>
+<path class="ln" d="M320,96 V130 M86,130 H554 M86,130 V168 M242,130 V168 M398,130 V168 M554,130 V168"/>
+
+<g transform="translate(16,168)">
+<rect class="surf" width="140" height="200" rx="12"/>
+<rect class="wall" x="18" y="48" width="104" height="44" rx="5"/>
+<path class="lumen" d="M18,54 H48 C58,54 62,67 70,67 C78,67 82,54 92,54 H122 V86 H92 C82,86 78,73 70,73 C62,73 58,86 48,86 H18 Z"/>
+<text class="b" x="70" y="130" font-size="15">阻塞性 CAD</text>
+<text class="m" x="70" y="152" font-size="12">心外膜冠狀動脈</text>
+<text class="m" x="70" y="170" font-size="12">阻塞</text>
+</g>
+
+<g transform="translate(172,168)">
+<rect class="surf" width="140" height="200" rx="12"/>
+<rect class="wall" x="18" y="48" width="104" height="44" rx="5"/>
+<rect class="lumen" x="18" y="54" width="104" height="32"/>
+<text class="b" x="70" y="130" font-size="15">ANOCA / INOCA</text>
+<text class="m" x="70" y="152" font-size="12">無阻塞的</text>
+<text class="m" x="70" y="170" font-size="12">心絞痛或缺血</text>
+</g>
+
+<g transform="translate(328,168)">
+<rect class="surf" width="140" height="200" rx="12"/>
+<rect class="lumen" x="18" y="62" width="44" height="18" rx="3"/>
+<path class="v" stroke-width="4" d="M60,71 C80,71 86,52 104,46 M60,71 C82,71 90,64 110,62 M60,71 C82,71 90,80 110,82 M60,71 C80,71 86,92 104,98"/>
+<path class="v" stroke-width="2" d="M90,57 L102,36 M94,66 L120,56 M94,77 L120,90 M90,86 L100,106 M104,46 L118,40 M104,98 L118,104"/>
+<text class="b" x="70" y="130" font-size="15">微血管功能障礙</text>
+<text class="m" x="70" y="152" font-size="12">microvascular</text>
+<text class="m" x="70" y="170" font-size="12">dysfunction</text>
+</g>
+
+<g transform="translate(484,168)">
+<rect class="surf" width="140" height="200" rx="12"/>
+<rect class="wall" x="18" y="48" width="104" height="44" rx="5"/>
+<path class="lumen" d="M18,54 H40 C52,54 54,64 64,64 H76 C86,64 88,54 100,54 H122 V86 H100 C88,86 86,76 76,76 H64 C54,76 52,86 40,86 H18 Z"/>
+<path class="arrow" d="M70,22 V44"/>
+<path class="arrow" d="M70,118 V96"/>
+<text class="b" x="70" y="140" font-size="15">血管痙攣</text>
+<text class="m" x="70" y="162" font-size="12">vasospasm</text>
+</g>
+</svg>

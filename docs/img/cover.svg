@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="120 20 520 390" role="img" aria-labelledby="t">
+<title id="t">冠狀動脈樹示意</title>
+<defs>
+<style>
+svg{background:#fff}
+.ao{fill:#f4f0ef;stroke:#ddd5d3;stroke-width:1.5}
+.v{fill:none;stroke:#b3261e;stroke-linecap:round}.f{stroke-opacity:.35}
+.dot{fill:#b3261e}
+@media (prefers-color-scheme:dark){svg{background:oklch(0.21 0.008 25)}.ao{fill:#2d2625;stroke:#463c3b}.v{stroke:#ff8a80}.dot{fill:#ff8a80}}
+</style>
+</defs>
+<circle class="ao" cx="320" cy="50" r="26"/>
+<path class="v" stroke-width="9" d="M300,68 Q250,68 220,110 Q170,160 160,225 Q165,300 230,335"/>
+<path class="v f" stroke-width="6" d="M230,335 Q270,380 325,395 M230,335 Q280,330 335,320"/>
+<path class="v" stroke-width="10" d="M340,68 Q372,76 400,100"/>
+<path class="v" stroke-width="9" d="M400,100 Q398,140 392,172 Q386,222 382,272 Q378,322 372,378"/>
+<path class="v" stroke-width="5.5" d="M396,150 Q425,165 458,212 M385,245 Q410,262 440,302"/>
+<path class="v" stroke-width="9" d="M400,100 Q452,104 502,130 Q562,150 594,234"/>
+<path class="v" stroke-width="5.5" d="M502,130 Q508,185 496,245 M576,196 Q580,250 560,300"/>
+<path class="v f" stroke-width="6" d="M594,234 Q604,330 520,388"/>
+<circle class="dot" cx="387" cy="222" r="7"/>
+<circle class="dot" cx="387" cy="222" r="16" fill-opacity=".18"/>
+</svg>

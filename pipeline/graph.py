@@ -96,7 +96,10 @@ def node_assemble(state, ctx):
         for d in sec["rejected"]:
             dropped.append({"section": sec["title"], **d})
         if sec["kept"]:
-            state["slides"].append({"type": "content", "title": sec["title"], "bullets": sec["kept"]})
+            slide = {"type": "content", "title": sec["title"], "bullets": sec["kept"]}
+            if sec.get("figure"):
+                slide["figure"] = sec["figure"]
+            state["slides"].append(slide)
         else:
             empty.append(sec["title"])
     kept = sum(len(s["bullets"]) for s in state["slides"])

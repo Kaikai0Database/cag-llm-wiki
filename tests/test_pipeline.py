@@ -121,6 +121,45 @@ class TestRender(unittest.TestCase):
             self.assertEqual(site["decks"][0]["slide_count"], len(deck["slides"]))
 
 
+class TestFigures(unittest.TestCase):
+    """圖片為主：章節的 figure 要帶進簡報 JSON；路徑不合法就丟掉。"""
+
+    def _deck(self, figure):
+        spec = {"slug": "f", "title": "T", "subtitle": "s",
+                "sections": [{"title": "功能評估", "query": "FFR", "sources": ["esc2024"], "figure": figure}]}
+        state = graph.run_deck(spec, llm=FakeLLM(), retriever=fake_retriever, max_iters=1)
+        with tempfile.TemporaryDirectory() as d:
+            docs = Path(d)
+            render.write_deck(state, docs, model="fake")
+            return json.loads((docs / "data" / "decks" / "f.json").read_text(encoding="utf-8"))
+
+    def test_figure_passes_through(self):
+        fig = {"src": "img/fig-ica-ffr.svg", "alt": "狹窄程度與功能評估", "caption": "依 esc2024#4 繪製"}
+        slide = self._deck(fig)["slides"][1]
+        self.assertEqual(slide["figure"], fig)
+
+    def test_unsafe_figure_path_dropped(self):
+        for bad in ["https://evil.example/x.svg", "../x.svg", "img/x.png\" onerror=\"", "img/X.svg"]:
+            slide = self._deck({"src": bad, "alt": "x", "caption": ""})["slides"][1]
+            self.assertNotIn("figure", slide, bad)
+
+    def test_spec_figures_exist_and_have_alt(self):
+        for spec_path in (ROOT / "decks").glob("*.json"):
+            spec = json.loads(spec_path.read_text(encoding="utf-8"))
+            for sec in spec["sections"]:
+                fig = sec.get("figure")
+                self.assertIsNotNone(fig, f"{spec_path.name}: {sec['title']} 沒有圖")
+                self.assertTrue((ROOT / "docs" / fig["src"]).exists(), fig["src"])
+                self.assertTrue(fig.get("alt"), fig["src"])
+
+    def test_svg_files_are_inert(self):
+        bad = re.compile(r"<script|<foreignObject|\son\w+\s*=|href\s*=\s*[\"'](?:https?:|//|javascript:)", re.I)
+        svgs = list((ROOT / "docs" / "img").glob("*.svg"))
+        self.assertGreaterEqual(len(svgs), 11)
+        for svg in svgs:
+            self.assertIsNone(bad.search(svg.read_text(encoding="utf-8")), svg.name)
+
+
 class TestFrontendSafety(unittest.TestCase):
     """規範 4：禁止 innerHTML 類 API；外部來源必須寫死版本。"""
 
