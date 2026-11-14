@@ -51,6 +51,23 @@ python -m http.server 8765 --bind 127.0.0.1 --directory docs   # 預覽 http://1
 
 新增主題：複製 `decks/cag-esc-2024.json`，改 `slug`（小寫英數與 `-`）和章節，再跑 `build`。
 
+## 部署（GitHub Pages）
+
+網站：https://kaikai0database.github.io/cag-llm-wiki/
+
+- `gh-pages` 分支 = `docs/` 的內容（用 `git subtree split` 產生），GitHub Pages 從這裡發佈。
+- `source` 分支 = 完整原始碼。
+
+更新網站：
+
+```powershell
+git subtree split --prefix docs -b site   # 每次重新產生
+git push origin site:gh-pages main:source
+git branch -D site
+```
+
+流程設計與反思：`docs/design.html`（資料在 `docs/data/design.json`）。
+
 ## 前端安全規範
 
 - 資料只用 `textContent` / `createElement` 寫入；測試會掃描 `docs/*.js`，出現 `innerHTML`、`outerHTML`、`insertAdjacentHTML`、`document.write`、`eval(`、`new Function` 就失敗。
